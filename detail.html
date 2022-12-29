@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <i class="bi bi-journal brand-logo"></i>
+          </a>
+          <div class="input-group w-25">
+            <span class="input-group-text border-end-0">
+              <i class="bi bi-search"></i>
+            </span>
+            <input type="text" placeholder="Search in my blog" class="form-control border-star">
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-center" aria-current="page" href="#">
+                  <i class="bi bi-pencil-square"></i>
+                  Write
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-warning rounded-pill text-center text-white" href="register.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="login.html">Sign In</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="img/user.jpeg" alt="" height="30" class="border rounded-circle">
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg-end pb-0">
+                    <div class="p-3 pb-0">
+                      <div class="me-5">
+                        <div class="d-flex align-items-center mb-3">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-label="Profile"><circle cx="12" cy="7" r="4.5" stroke="currentColor"></circle><path d="M3.5 21.5v-4.34C3.5 15.4 7.3 14 12 14s8.5 1.41 8.5 3.16v4.34" stroke="currentColor" stroke-linecap="round"></path></svg>
+                          <p class="mb-0 ms-3 small">Profile</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-label="Lists"><path d="M6.44 6.69h0a1.5 1.5 0 0 1 1.06-.44h9c.4 0 .78.16 1.06.44l.35-.35-.35.35c.28.28.44.66.44 1.06v14l-5.7-4.4-.3-.23-.3.23-5.7 4.4v-14c0-.4.16-.78.44-1.06z" stroke="currentColor"></path><path d="M12.5 2.75h-8a2 2 0 0 0-2 2v11.5" stroke="currentColor" stroke-linecap="round"></path></svg>
+                          <p class="mb-0 ms-3 small">Lists</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-label="Stories"><path d="M4.75 21.5h14.5c.14 0 .25-.11.25-.25V2.75a.25.25 0 0 0-.25-.25H4.75a.25.25 0 0 0-.25.25v18.5c0 .14.11.25.25.25z" stroke="currentColor"></path><path d="M8 8.5h8M8 15.5h5M8 12h8" stroke="currentColor" stroke-linecap="round"></path></svg>                          
+                          <p class="mb-0 ms-3 small">Stories</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-label="Stats"><path d="M2.75 19h4.5c.14 0 .25-.11.25-.25v-6.5a.25.25 0 0 0-.25-.25h-4.5a.25.25 0 0 0-.25.25v6.5c0 .14.11.25.25.25zM9.75 19h4.5c.14 0 .25-.11.25-.25V8.25a.25.25 0 0 0-.25-.25h-4.5a.25.25 0 0 0-.25.25v10.5c0 .14.11.25.25.25zM16.75 19h4.5c.14 0 .25-.11.25-.25V4.25a.25.25 0 0 0-.25-.25h-4.5a.25.25 0 0 0-.25.25v14.5c0 .14.11.25.25.25z" stroke="currentColor"></path></svg>
+                          <p class="mb-0 ms-3 small">Stats</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="me-5 text-nowrap">
+                        <a href="#" class="small d-block mb-3">Settings</a>
+                        <a href="#" class="small d-block mb-3">Refine recommendations</a>
+                        <a href="#" class="small d-block mb-3">Manage publications</a>
+                      </div>
+                      <hr>
+                      <div class="me-5 text-nowrap">
+                        <div class="d-flex justify-content-between">
+                         <a href="#" class="small d-block mb-3">Become a member</a>
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z" fill="#FFC017"></path></svg>
+                        </div>
+                        <a href="#" class="small d-block mb-3">Apply to the Partner Program</a>
+                        <a href="#" class="small d-block mb-3">Gift a membership</a>
+                      </div>
+                      <hr>
+                      <div class="me-5 text-nowrap">
+                        <a href="#" class="small d-block mb-3">Sign out</a>
+                        <a href="#" class="small d-block mb-3">htunkok.mg@gmail.com</a>
+                      </div>
+                    </div> 
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section id="blog">
+          <div class="container">
+            <div class="row g-0 g-md-5">
+              <div class="col-12 col-md-7 col-lg-8">
+                <div class="row g-4 g-md-0 align-items-center mt-5">
+                    <div class="col-11 col-md-6">
+                        <div class="d-flex">
+                            <img alt="" class="rounded-circle me-3" src="https://miro.medium.com/fit/c/48/48/1*6p234-nm6TOYl_n71bKtDw.jpeg" width="48" height="48">
+                            <div class="">
+                                <a href="#" class="para-font mb-0 d-block">These Shadows Dread</a>
+                                <a href="#" class="small mb-0 d-block">
+                                    Dec 26 · 1 min read ·
+                                    <button class="bg-transparent border-0 para-font">
+                                        <i class="bi bi-play-circle-fill"></i>
+                                        Listen
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-6">
+                        <div class="d-flex  justify-content-center justify-content-md-end">
+                            <div class="me-5">
+                                <a href="#">
+                                    <i class="bi bi-twitter me-3"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-facebook me-3"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-linkedin me-3"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                            <a href="#" class="me-5">
+                                <i class="bi bi-bookmark-plus"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-three-dots"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <h1 class="para-font mb-4">My Tumblr and Twitter</h1>
+
+                    <p class="para-font h5 mb-5">
+                        I hope you guys have enjoyed my work so far. I have gained a small following here since I re-opened my blog in July. I’m hoping 2023 will be an even-better year for me.
+                    </p>
+
+                    <img class="mb-5 w-100" src="https://miro.medium.com/max/720/1*CWYCU_1QaGbXPZg5LFeO6w.webp" alt="">
+
+                    <a class="para-font d-block mb-5 h4">Here is a link to my blog on Tumblr:</a>
+
+                    <a href="#" class="para-font d-none d-md-block h4 mb-5" style="text-decoration: underline;">
+                        https://theseshadowsdread.tumblr.com/
+                    </a>
+
+                    <a href="#" class="para-font d-block d-md-none mb-5" style="text-decoration: underline;">
+                        https://theseshadowsdread.tumblr.com/
+                    </a>
+
+                    <p class="para-font h5 mb-5">
+                        Be sure to follow me there if you want more off-the-cuff content than what is here. Another difference is that I post advice there on writing a blog, whereas here, my articles are more issues-based.
+                    </p>
+
+                    <p class="para-font h5 mb-5">
+                        Also, be sure to follow me on Twitter. I’m ShadowsDread there.
+                    </p>
+
+                    <p class="para-font h5 mb-5">
+                        See you soon! :)
+                    </p>
+
+
+                    <p class="para-font h5 mb-5">
+                        -These Shadows Dread
+                    </p>
+
+                    <div class="">
+                        <a href="#" class="btn btn-sm btn-secondary me-2 mb-2">Blog</a>
+                        <a href="#" class="btn btn-sm btn-secondary me-2 mb-2">Blogging</a>
+                        <a href="#" class="btn btn-sm btn-secondary me-2 mb-2">Tumblr</a>
+                        <a href="#" class="btn btn-sm btn-secondary me-2 mb-2">Trending</a>
+                        <a href="#" class="btn btn-sm btn-secondary me-2 mb-2">Writer</a>
+                      </div>
+
+                      <div class="row align-items-center my-5">
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <i class="bi bi-hand-thumbs-up-fill me-5"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-chat-dots"></i>
+                                </a>                                       
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-end">
+                                <a href="#" class="me-5">
+                                    <i class="bi bi-bookmark-plus"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-three-dots"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="bg-info">
+                        <div class="p-3 text-white">
+                            <div class="d-flex justify-content-between align-items-center my-4">
+                                <div class="">
+                                    <a class="para-font h5 text-white">More from These Shadows Dread</a>
+                                    <p class="para-font small">
+                                        Promoter of Indie Musicians/Writer/Poet/Teacher
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <button class="btn btn-sm btn-warning mb-3 mb-md-0">Follow</button>
+                                    <button class="btn btn-sm btn-warning">
+                                        <i class="bi bi-envelope-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <a href="#" class="text-white d-block">5 days ago</a>
+                                <a href="#" class="h5 para-font text-white my-3 d-block">
+                                    Attack of the Flesh-Eating Nepotism
+                                </a>
+                                <a href="#" class="text-white small d-block ">
+                                    Nepotism. It almost sounds like a flesh-eating disease or something. (No, I’m not going to write about Bones and All. This is not a movie blog, and that movie looks awful.) It’s been hard to miss the conversation happening on Twitter about nepotism and “nepo babies.” The term itself
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center my-4">
+                                <div class="d-flex align-items-center">
+                                   <a href="#" class="btn btn-sm btn-light para-font">Celebrity</a>
+                                   <p class="ms-3 small mb-0 text-white-50">5 mins read</p>
+                                </div>
+                                <div class="d-flex">
+                                    <a href="#">
+                                        <i class="bi bi-bookmark-plus-fill text-white"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-three-dots text-white ms-4"></i>
+                                    </a>                                       
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <h5 class="para-font me-2">Share your ideas with millions of readers.</h5>
+                                <button class="btn btn-sm btn-light text-black para-font">Write on Medium</button>
+                            </div>
+                            <hr>
+                            <div class="articles">
+                                <article>
+                                  <div class="d-flex align-items-center writer mb-3">
+                                    <a href="#" class="small text-white para-font">
+                                        6 days ago
+                                    </a>
+                                  </div>
+                                  <div class="row flex-column-reverse flex-md-row justify-content-between">
+                                    <div class="col-12 col-md-9">
+                                     <div class="">
+                                        <a href="#" class="h4 fw-bold d-block para-font text-white">
+                                            Seasonal Depression and How I Try to Beat It
+                                        </a>
+                                        <a href="#" class="para-font text-white small">
+                                            ****Note: I am NOT diagnosed with depression or any mental health disorder. I am speaking generally from my own emotional experience in this article. If you are struggling, please seek professional help. If you or someone you know is in danger of harming yourself/themselves,
+                                        </a>
+                                      <div class="d-flex justify-content-between align-items-center my-4">
+                                        <div class="mb-3 mb-md-0">
+                                          <a href="#" class="btn btn-sm btn-light para-font me-2">
+                                            Mental Health
+                                          </a>
+                                          <span class="text-info small">1 min read</span>
+                                        </div>
+                                        <div class="d-flex">
+                                          <i class="bi bi-bookmark-plus"></i>
+                                          <i class="bi bi-three-dots ms-2"></i>
+                                        </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                      <img src="https://miro.medium.com/fit/c/112/112/1*rhV4YDQ9FU98ymo8d5okoA.png" class="w-100 mb-3 mb-md-0" alt="">
+                                    </div>
+                                  </div>
+                                </article>
+                              </div>
+                              <hr>
+                              <div class="articles">
+                                <article>
+                                  <div class="d-flex align-items-center writer mb-3">
+                                    <a href="#" class="small text-white para-font">
+                                        6 days ago
+                                    </a>
+                                  </div>
+                                  <div class="row flex-column-reverse flex-md-row justify-content-between">
+                                    <div class="col-12 col-md-9">
+                                     <div class="">
+                                        <a href="#" class="h4 fw-bold d-block para-font text-white">
+                                            Seasonal Depression and How I Try to Beat It
+                                        </a>
+                                        <a href="#" class="para-font text-white small">
+                                            ****Note: I am NOT diagnosed with depression or any mental health disorder. I am speaking generally from my own emotional experience in this article. If you are struggling, please seek professional help. If you or someone you know is in danger of harming yourself/themselves,
+                                        </a>
+                                      <div class="d-flex justify-content-between align-items-center my-4">
+                                        <div class="mb-3 mb-md-0">
+                                          <a href="#" class="btn btn-sm btn-light para-font me-2">
+                                            Mental Health
+                                          </a>
+                                          <span class="text-info small">1 min read</span>
+                                        </div>
+                                        <div class="d-flex">
+                                          <i class="bi bi-bookmark-plus"></i>
+                                          <i class="bi bi-three-dots ms-2"></i>
+                                        </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                      <img src="https://miro.medium.com/fit/c/112/112/1*rhV4YDQ9FU98ymo8d5okoA.png" class="w-100 mb-3 mb-md-0" alt="">
+                                    </div>
+                                  </div>
+                                </article>
+                              </div>
+                              <hr>
+                              <div class="articles">
+                                <article>
+                                  <div class="d-flex align-items-center writer mb-3">
+                                    <a href="#" class="small text-white para-font">
+                                        6 days ago
+                                    </a>
+                                  </div>
+                                  <div class="row flex-column-reverse flex-md-row justify-content-between">
+                                    <div class="col-12 col-md-9">
+                                     <div class="">
+                                        <a href="#" class="h4 fw-bold d-block para-font text-white">
+                                            Seasonal Depression and How I Try to Beat It
+                                        </a>
+                                        <a href="#" class="para-font text-white small">
+                                            ****Note: I am NOT diagnosed with depression or any mental health disorder. I am speaking generally from my own emotional experience in this article. If you are struggling, please seek professional help. If you or someone you know is in danger of harming yourself/themselves,
+                                        </a>
+                                      <div class="d-flex justify-content-between align-items-center my-4">
+                                        <div class="mb-3 mb-md-0">
+                                          <a href="#" class="btn btn-sm btn-light para-font me-2">
+                                            Mental Health
+                                          </a>
+                                          <span class="text-info small">1 min read</span>
+                                        </div>
+                                        <div class="d-flex">
+                                          <i class="bi bi-bookmark-plus"></i>
+                                          <i class="bi bi-three-dots ms-2"></i>
+                                        </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                      <img src="https://miro.medium.com/fit/c/112/112/1*rhV4YDQ9FU98ymo8d5okoA.png" class="w-100 mb-3 mb-md-0" alt="">
+                                    </div>
+                                  </div>
+                                </article>
+                              </div>
+                              <hr>
+                              <div class="articles">
+                                <article>
+                                  <div class="d-flex align-items-center writer mb-3">
+                                    <a href="#" class="small text-white para-font">
+                                        6 days ago
+                                    </a>
+                                  </div>
+                                  <div class="row flex-column-reverse flex-md-row justify-content-between">
+                                    <div class="col-12 col-md-9">
+                                     <div class="">
+                                        <a href="#" class="h4 fw-bold d-block para-font text-white">
+                                            Seasonal Depression and How I Try to Beat It
+                                        </a>
+                                        <a href="#" class="para-font text-white small">
+                                            ****Note: I am NOT diagnosed with depression or any mental health disorder. I am speaking generally from my own emotional experience in this article. If you are struggling, please seek professional help. If you or someone you know is in danger of harming yourself/themselves,
+                                        </a>
+                                      <div class="d-flex justify-content-between align-items-center my-4">
+                                        <div class="mb-3 mb-md-0">
+                                          <a href="#" class="btn btn-sm btn-light para-font me-2">
+                                            Mental Health
+                                          </a>
+                                          <span class="text-info small">1 min read</span>
+                                        </div>
+                                        <div class="d-flex">
+                                          <i class="bi bi-bookmark-plus"></i>
+                                          <i class="bi bi-three-dots ms-2"></i>
+                                        </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                      <img src="https://miro.medium.com/fit/c/112/112/1*rhV4YDQ9FU98ymo8d5okoA.png" class="w-100 mb-3 mb-md-0" alt="">
+                                    </div>
+                                  </div>
+                                </article>
+                              </div>
+                              <hr>
+                              <div class="articles">
+                                <article>
+                                  <div class="d-flex align-items-center writer mb-3">
+                                    <a href="#" class="small text-white para-font">
+                                        6 days ago
+                                    </a>
+                                  </div>
+                                  <div class="row flex-column-reverse flex-md-row justify-content-between">
+                                    <div class="col-12 col-md-9">
+                                     <div class="">
+                                        <a href="#" class="h4 fw-bold d-block para-font text-white">
+                                            Seasonal Depression and How I Try to Beat It
+                                        </a>
+                                        <a href="#" class="para-font text-white small">
+                                            ****Note: I am NOT diagnosed with depression or any mental health disorder. I am speaking generally from my own emotional experience in this article. If you are struggling, please seek professional help. If you or someone you know is in danger of harming yourself/themselves,
+                                        </a>
+                                      <div class="d-flex justify-content-between align-items-center my-4">
+                                        <div class="mb-3 mb-md-0">
+                                          <a href="#" class="btn btn-sm btn-light para-font me-2">
+                                            Mental Health
+                                          </a>
+                                          <span class="text-info small">1 min read</span>
+                                        </div>
+                                        <div class="d-flex">
+                                          <i class="bi bi-bookmark-plus"></i>
+                                          <i class="bi bi-three-dots ms-2"></i>
+                                        </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                      <img src="https://miro.medium.com/fit/c/112/112/1*rhV4YDQ9FU98ymo8d5okoA.png" class="w-100 mb-3 mb-md-0" alt="">
+                                    </div>
+                                  </div>
+                                </article>
+                              </div>
+                              <hr>
+                              <div class="articles">
+                                <article>
+                                  <div class="d-flex align-items-center writer mb-3">
+                                    <a href="#" class="small text-white para-font">
+                                        6 days ago
+                                    </a>
+                                  </div>
+                                  <div class="row flex-column-reverse flex-md-row justify-content-between">
+                                    <div class="col-12 col-md-9">
+                                     <div class="">
+                                        <a href="#" class="h4 fw-bold d-block para-font text-white">
+                                            Seasonal Depression and How I Try to Beat It
+                                        </a>
+                                        <a href="#" class="para-font text-white small">
+                                            ****Note: I am NOT diagnosed with depression or any mental health disorder. I am speaking generally from my own emotional experience in this article. If you are struggling, please seek professional help. If you or someone you know is in danger of harming yourself/themselves,
+                                        </a>
+                                      <div class="d-flex justify-content-between align-items-center my-4">
+                                        <div class="mb-3 mb-md-0">
+                                          <a href="#" class="btn btn-sm btn-light para-font me-2">
+                                            Mental Health
+                                          </a>
+                                          <span class="text-info small">1 min read</span>
+                                        </div>
+                                        <div class="d-flex">
+                                          <i class="bi bi-bookmark-plus"></i>
+                                          <i class="bi bi-three-dots ms-2"></i>
+                                        </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                      <img src="https://miro.medium.com/fit/c/112/112/1*rhV4YDQ9FU98ymo8d5okoA.png" class="w-100 mb-3 mb-md-0" alt="">
+                                    </div>
+                                  </div>
+                                </article>
+                              </div>
+                              <hr>
+                              <div class="d-flex justify-content-center align-items-center my-5">
+                                <h5 class="para-font me-2 small">
+                                    Love podcasts or audiobooks? Learn on the go with our new app.
+                                </h5>
+                                <button class="btn btn-sm btn-light text-black para-font">Try Knowable</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-5 col-lg-4">
+                <div class="my-0 mt-md-5  px-3">
+                  <div class="mb-5">
+                    <button class="btn btn-dark w-100">Get unlimited acess</button>
+                  </div>
+                  <div class="">
+                    <img alt="These Shadows Dread" class="rounded-circle" src="https://miro.medium.com/fit/c/88/88/1*6p234-nm6TOYl_n71bKtDw.jpeg" width="88" height="88">
+                    <a href="#" class="para-font h5 d-block my-2">These Shadows Dread</a>
+                    <a href="#" class="para-font text-black-50 small d-block mb-3">49 Followers</a>
+                    <div class="para-font mb-4">
+                        <p class="text-black-50 mb-0">Promoter of Indie</p>
+                        <p class="text-black-50 mb-0">Musicians/Writer/Poet/Teacher</p>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-sm btn-warning mb-3 mb-md-0">Follow</button>
+                        <button class="btn btn-sm btn-warning">
+                            <i class="bi bi-envelope-plus"></i>
+                        </button>
+                    </div>
+                  </div>
+                </div>
+               <div class="position-sticky" style="top:1px">
+                <div class="topic my-5 px-3">
+                  <p class="mb-3 para-font">Mroe from Medium</p>
+                  <div class="">
+                    <div class="row mb-4">
+                        <div class="col-9">
+                            <div class="d-flex mb-2">
+                                <img alt="Mark Vassilevskiy" class="rounded-circle me-2" src="https://miro.medium.com/fit/c/20/20/1*bccvj0_zzEDkfrfszRiPkQ.jpeg" width="20" height="20">
+                                <a href="#" class="para-font small">Mark Vassilevskiy</a>
+                            </div>
+                            <a href="#" class="para-font small">
+                                5 Unique Passive Income Ideas — How I Make $4,580/Month</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://miro.medium.com/focal/56/56/50/50/1*OimWR9RFAGMTHBRJMIvQFg.jpeg" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-9">
+                            <div class="d-flex mb-2">
+                                <img alt="Mark Vassilevskiy" class="rounded-circle me-2" src="https://miro.medium.com/fit/c/20/20/1*bccvj0_zzEDkfrfszRiPkQ.jpeg" width="20" height="20">
+                                <a href="#" class="para-font small">Mark Vassilevskiy</a>
+                            </div>
+                            <a href="#" class="para-font small">
+                                5 Unique Passive Income Ideas — How I Make $4,580/Month</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://miro.medium.com/focal/56/56/50/50/1*OimWR9RFAGMTHBRJMIvQFg.jpeg" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-9">
+                            <div class="d-flex mb-2">
+                                <img alt="Mark Vassilevskiy" class="rounded-circle me-2" src="https://miro.medium.com/fit/c/20/20/1*bccvj0_zzEDkfrfszRiPkQ.jpeg" width="20" height="20">
+                                <a href="#" class="para-font small">Mark Vassilevskiy</a>
+                            </div>
+                            <a href="#" class="para-font small">
+                                5 Unique Passive Income Ideas — How I Make $4,580/Month</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://miro.medium.com/focal/56/56/50/50/1*OimWR9RFAGMTHBRJMIvQFg.jpeg" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-9">
+                            <div class="d-flex mb-2">
+                                <img alt="Mark Vassilevskiy" class="rounded-circle me-2" src="https://miro.medium.com/fit/c/20/20/1*bccvj0_zzEDkfrfszRiPkQ.jpeg" width="20" height="20">
+                                <a href="#" class="para-font small">Mark Vassilevskiy</a>
+                            </div>
+                            <a href="#" class="para-font small">
+                                5 Unique Passive Income Ideas — How I Make $4,580/Month</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://miro.medium.com/focal/56/56/50/50/1*OimWR9RFAGMTHBRJMIvQFg.jpeg" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-9">
+                            <div class="d-flex mb-2">
+                                <img alt="Mark Vassilevskiy" class="rounded-circle me-2" src="https://miro.medium.com/fit/c/20/20/1*bccvj0_zzEDkfrfszRiPkQ.jpeg" width="20" height="20">
+                                <a href="#" class="para-font small">Mark Vassilevskiy</a>
+                            </div>
+                            <a href="#" class="para-font small">
+                                5 Unique Passive Income Ideas — How I Make $4,580/Month</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://miro.medium.com/focal/56/56/50/50/1*OimWR9RFAGMTHBRJMIvQFg.jpeg" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="my-5 pb-0 pb-md-5">
+                        <div class="text-info para-font">
+                          <a href="#" class="small me-2">Help</a>
+                          <a href="#" class="small me-2">Status</a>
+                          <a href="#" class="small me-2">Writers</a>
+                          <a href="#" class="small me-2">Careers</a>
+                          <a href="#" class="small me-2">Privacy</a>
+                          <a href="#" class="small me-2">Terms</a>
+                          <a href="#" class="small me-2">About</a>
+                          <a href="#" class="small me-2">Text to speech</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
